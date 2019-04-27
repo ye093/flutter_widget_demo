@@ -72,28 +72,32 @@ class _ValueListenableAnimationPageContentState
             return ValueListenableWithAnimation(angle: value);
           },
         ),
-        DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(colors: const <Color>[
-              Colors.blueAccent,
-              Colors.black38,
-              Colors.lightBlueAccent
-            ]),
-          ),
-          child: Material(
-            type: MaterialType.transparency,
-            child: InkWell(
-              highlightColor: Colors.transparent,
-              splashColor: Colors.lightBlueAccent,
-              onTap: () {
-                _angle.value += 90;
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: Text(
-                    '转起来吧',
-                    style: TextStyle(color: Colors.white),
+        SizedBox(
+          width: 150,
+          height: 50,
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: const <Color>[
+                Colors.blueAccent,
+                Colors.black38,
+                Colors.lightBlueAccent
+              ]),
+            ),
+            child: Material(
+              type: MaterialType.transparency,
+              child: InkWell(
+                highlightColor: Colors.transparent,
+                splashColor: Colors.lightBlueAccent,
+                onTap: () {
+                  _angle.value += 90;
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Text(
+                      '转起来吧',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
                   ),
                 ),
               ),
