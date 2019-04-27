@@ -53,6 +53,12 @@ class _TurnBoxState extends State<TurnBox> with SingleTickerProviderStateMixin {
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return RotationTransition(turns: _animationController, child: widget.child);
   }

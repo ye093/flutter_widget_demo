@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/turn_box_widget.dart';
+import 'pages/value_listenable_builder.dart';
 
 void main() => runApp(App());
 
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '自定义控件',
-      home: TurnBoxTest(),
+      home: MyPage(),
     );
   }
 
