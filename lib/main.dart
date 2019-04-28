@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'component/font_widget.dart';
+import 'pages/tab_controller_test1.dart';
 
 void main() => runApp(App());
 
