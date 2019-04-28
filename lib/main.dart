@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/multi_sync_animation.dart';
+import 'pages/animation_test9.dart';
 
 void main() => runApp(App());
 
