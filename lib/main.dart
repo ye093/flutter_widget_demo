@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/sized_box.dart';
+import 'pages/multi_sync_animation.dart';
 
 void main() => runApp(App());
 
