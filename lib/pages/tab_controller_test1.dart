@@ -69,9 +69,42 @@ class _MyState extends State<MyContentPage> with SingleTickerProviderStateMixin 
             title: Text('Tab Controller'),
           ),
           body: TabBarView(controller: _tabController, children: [
-            Icon(Icons.directions_car),
-            Icon(Icons.directions_transit),
-            Icon(Icons.directions_bike),
+            ListView.builder(
+                itemCount: 100,
+                itemBuilder: (BuildContext context, int index) {
+                  return ListTile(
+                    leading: Icon(
+                      Icons.favorite,
+                      color: Colors.orange,
+                      size: 28,
+                    ),
+                    title: Text('你好啊这是商业第$index'),
+                  );
+                }),
+            ListView.builder(
+                itemCount: 100,
+                itemBuilder: (BuildContext context, int index) {
+                  return ListTile(
+                    leading: Icon(
+                      Icons.favorite,
+                      color: Colors.orange,
+                      size: 28,
+                    ),
+                    title: Text('你好啊这是购物车第$index'),
+                  );
+                }),
+            ListView.builder(
+                itemCount: 100,
+                itemBuilder: (BuildContext context, int index) {
+                  return ListTile(
+                    leading: Icon(
+                      Icons.favorite,
+                      color: Colors.orange,
+                      size: 28,
+                    ),
+                    title: Text('你好啊这是我的第$index'),
+                  );
+                }),
           ]),
         ));
   }
